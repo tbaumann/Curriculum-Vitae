@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Tilman} % Your first name
+\familyname{Baumann} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+% JMP - If you are to look for a job in the UK, I'd put a friends' address or add "willing to relocate"
+% JMP - For the phone, idem, perhaps get a quick pay as you go? but that is LESS IMPORTANT. Address is better.
+\title{Curriculum Vitae}
+\address{Karlsruhe, Germany (Willing to relocate)}{}
+\mobile{+49 176 84475067}
+\email{tilman@baumann.name}
+\homepage{http://www.tilman.baumann.name}{} 
+%%\extrainfo{\url{https://www.linkedin.com/in/tilmanbaumann}}
+%% \photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\quote{Software \& Systems Engineer}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+\section{Profile}
+I have been in constant professional employment since 2001 in the area of software development and Linux integration and maintenance.
+I'm enthusiastic about providing great user experiences and making the open source world accessible to others.
+I usually use Perl as the programming language of choice to get things done. I have used various other languages when required.
+I have a very intimate knowledge about Linux core technologies but my strength is certainly a high level of flexibility and very broad technical knowledge not only in my main area of interest.
+I'm looking to focus more on DevOps technologies like Virtualisation, Containers, Cloud Orchestration, Provisioning and Configuration-Management, Micro-services, Open-Stack and the like. I always enjoyed working in that area and I think my Linux integration and Distro building background gives me a specially valuable view on things.
+
+\section{Work Experience}
+
+\cventry{2013-04--present}{Software Developer}{Sophos}{Karlsruhe, Germany}{}{My role originally was very similar to my job previously at Collax. Sophos also provides a network security appliance based on a very similar technology stack. This was a great fit to my skills and experiences. I was employed in the Core team.
+However due to restructuring in the company, that part of the job became less and less and I moved on to the cloud and high availability team. That was a great thing, because work there was much more creative and interesting as we where moving the company in totally new directions instead of merely maintaining existing technologies.
+We developed High-Availabilty and Auto-scaling for the Sophos Unified Thread Management appliance in the Amazon Cloud. Using mostly Ruby and a ton of Amazon technologies. The challenge was to bring a old style monolithic service into the new cloud world. Recently we switched to Go as a programming language and are working to develop more born in the cloud services rather than adapting legacy products.
+We worked fully agile with Scrum and while not consistently using TDD (Not for legacy) we have great test coverage.}
+\cvitem{Technologies}{Perl, Ruby, Go, Linux, rpm, rSpec and Cucumber, Jenkins, Jira, Stash, CFEngine, AWS, EC2, Cloudformation, VPC, S3, SQS, ELB, Packer, Scrum, Azure, LXC, Agile, TDD, BDT/BDD, IoT, PaaS, SaaS}
+
+\cventry{2011-09--2013-04}{Software Engineer Embedded Linux}{Oncam/Grandeye}{Guildford, UK}{}{I was the main Linux guy at the company. Besides maintaining some IT infrastructure, I mainly worked on our Linux based Network Security Camera systems. I especially enjoyed improving stability and maintainability of the Linux subsystem.
+This job suited me quite well because I enjoy new challenges and take them as opportunities to learn about things.
+This is how I came to become to main contributor on porting our browser based client to our new camera system. Modern JavaScript comes quite easy and natural to me, perhaps because I'm also in Perl drawn to the higher order programming methods which are essential to good code in JavaScript. Our code grew over a long time and observes few of those good practices, so there is always something to do, to improve maintainability.
+I also enjoyed some more practical C++ experience, all though this was on Windows and very much on the go rather than proper learning. But it was nice to see how I can take new challenges quick and get things done right away even on more complex systems with little previous experience.
+I'm especially proud to have introduced automated functional testing in this company. It was a low hanging fruit, but really had to be done. Also I think they really needed someone with a system security background to challenge a few of their decisions.}
+\cvitem{Technologies}{C, C++, Embedded Linux, Embedded Linux Build Systems and Toolchains, git, JavaScript, ARM architecture, Texas Instruments DaVinci platform, u-boot,
+buildroot, openembedded.}
+
+\cventry{2011-06--2011-09}{Perl Web Devoper}{CV-Library}{Fleet, UK}{}{After my previous job was a bit one sided and mainly Linux focused, I was glad to find a position as Perl Developer again.
+Even though my professional focus was so far not so much on web development I could very easily put my many years of Perl development experience into practice. My knowledge of advanced Perl development techniques and my quick learning meant that I could practically start working effectively from the first day.
+Unfortunately the company turned out to be a bad fit for me and I left quite quickly.}
+\cvitem{Technologies}{Perl, OO-Perl, Moose, Template::Toolkit, MySQL, DBI, JavaScript, jQuery, Solr}
+
+\cventry{2009-03--2011-06}{Technical Support Engineer}{Red Hat}{Farnborough, UK}{}{Red Hat is a globally leading Enterprise Linux and opensouce company.
+At Red Hat I was providing 2nd level support for customers in English and German. Our team provided support for all Red Hat products except JBoss software. This includes mainly every possible aspect of the Red Hat Enterprise Linux Distribution but also lesser known products like realtime Linux and Directory Server. As a generalist I my specialisation is Base-OS, realtime and clustering.
+My broad Linux background and trouble shooting experience served me very well in this position. Red Hat's customer profile and the level of support they offer, requires high sensitivity for the requirements of Enterprise customers. We provided 24/7 and guaranteed response times and obviously business impact for the customer must always be taken in consideration.
+Due to this we are very international in our operation.
+Later I joined our support tools development department part time to develop internal support tools in Java on JBoss following a Scrumm model. This proved a great relieve for my creative energy.}
+\cvitem{Technologies}{Red Hat Enterprise Linux, Red Hat High Availability Cluster, Real Time Kernel,
+Red Hat Satellite, JavaEE}
+
+\cventry{2004-07--2009-03}{Software Developer}{Collax}{Freiburg, Germany}{}{Collax was founded based on the Pyramid Ben Hur appliance product. (See previous job).
+We did everything on our own from top to bottom and we had a relatively small team, so we had to be experts in everything. Which makes it a bit difficult to focus on specific technologies. All programming aspects of this job tended to be based on Perl but especially when it comes to integration, modification or debugging of 3rd party software I had to become familiar with other languages quickly, which I never found to be a problem.
+Our back end systems where Perl based, as was the build system and other internal projects.
+Due to the nature of the product and our holistic approach of providing a fully integrated system, I also gained a lot of experience with Linux systems integration and trouble shooting as well.
+In our team of developers I was usually the one entrusted with complex problems, strategic feature developments and integration of 3rd party software. Especially towards the end with great focus on networking technologies.}
+\cvitem{Technologies}{Perl, C, gdb, php, SQL, PL/pgSQL, java, SOAP, Linux, PostgreSQL, advanced Linux networking, apt/dpkg, rpm, cvs, git, apache, virtualization, openldap}
+
+\cventry{2004-06--2004-07}{Software Developer}{Pyramid Computer}{Freiburg, Germany}{}{Pyramid Computer is a medium sized business in special computer hardware and IT services. Pyramid was one of the leading Linux appliance providers and became well known for their Ben Hur Linux server appliance for small and medium business.
+My work there during my apprenticeship and later was everything around the life cycle of the Ben Hur Linux and Hardware appliance. From support to testing, bug fixing, designing and developing features and improvements, hardware testing, release testing and
+also connecting with other departments and customers and pre-sales engagements with customers directly}
+
+\cventry{2001-09--2004-06}{Apprenticeship IT Specialist}{Pyramid Computer}{Freiburg, Germany}{}{3 year apprenticeship for IT Specialist in Software Development.
+This is a State and Industry Trade Chamber run vocational education track consisting on one third vocational school and two thirds practical work at a company.}
+
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2011}{School of Business Postgraduate Scholarship}
+\cvitem{2010}{Top Achiever Award -- Commerce}
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Hobbies and Interests}
+Building and flying RC planes (gliders), small electronic projects, good books, mobile Linux, robots, UAV, movies, TV series, gardening, hacker events, ant farming and modern cooking and coffee.
+
+\section{References}
+References for all positions are available on request.
+
+Also see my LinkedIN profile.
+
+\end{document}
